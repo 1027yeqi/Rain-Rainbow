@@ -1,0 +1,827 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0px;
+
+}
+
+body {
+    margin: 0 40px;
+}
+
+.menu {
+    background-color: #fff;
+    margin: 50px;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 30px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    padding: 5px 20px;
+}
+
+.icons img {
+    width: 70px;
+    height: 70px;
+}
+
+.icons i {
+    font-size: 40px;
+    cursor: pointer;
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 0.5),
+            /* 红色，透明度为 0.1 */
+            rgba(255, 165, 0, 0.5),
+            /* 橙色，透明度为 0.1 */
+            rgba(255, 255, 0, 0.5),
+            /* 黄色，透明度为 0.1 */
+            rgba(0, 255, 0, 0.5),
+            /* 绿色，透明度为 0.1 */
+            rgba(0, 0, 255, 0.5),
+            /* 蓝色，透明度为 0.1 */
+            rgba(75, 0, 130, 0.5),
+            /* 靛蓝色，透明度为 0.1 */
+            rgba(238, 130, 238, 0.5)
+            /* 紫色，透明度为 0.1 */
+        );
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menus {
+    display: flex;
+    justify-self: flex-end;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.menus a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+}
+
+.menus a:hover {
+    color: #666666;
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 0.1),
+            /* 红色，透明度为 0.1 */
+            rgba(255, 165, 0, 0.1),
+            /* 橙色，透明度为 0.1 */
+            rgba(255, 255, 0, 0.1),
+            /* 黄色，透明度为 0.1 */
+            rgba(0, 255, 0, 0.1),
+            /* 绿色，透明度为 0.1 */
+            rgba(0, 0, 255, 0.1),
+            /* 蓝色，透明度为 0.1 */
+            rgba(75, 0, 130, 0.1),
+            /* 靛蓝色，透明度为 0.1 */
+            rgba(238, 130, 238, 0.1)
+            /* 紫色，透明度为 0.1 */
+        );
+    border-bottom: solid 1px #666666;
+}
+
+.mainp {
+    overflow: hidden;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.mainp img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    transition: transform 0.3s ease;
+}
+
+.mainp:hover img {
+    transform: scale(1.2);
+}
+
+.intro {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.intro,
+h2 {
+    font-size: 45px;
+    text-align: center;
+    margin: 10px 0 30px 10px;
+    color: #666666;
+}
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 10px;
+
+}
+
+.timeline p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timeline span {
+    font-size: 15px;
+    text-align: left;
+}
+
+.timeline strong {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*線の起点とするためrelativeを設定*/
+.timeline,
+.top-left,
+.top-right {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    width: 50%;
+    padding: 0 0 20px 0;
+
+}
+
+.timeline,
+.top-left span strong .top-right span strong {
+    display: block;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.biaozhi .top-left,
+.biaozh .top-right {
+    line-height: 15px;
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+
+.top-left:hover,
+.top-right:hover {
+    color: #666666;
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 0.1),
+            /* 红色，透明度为 0.1 */
+            rgba(255, 165, 0, 0.1),
+            /* 橙色，透明度为 0.1 */
+            rgba(255, 255, 0, 0.1),
+            /* 黄色，透明度为 0.1 */
+            rgba(0, 255, 0, 0.1),
+            /* 绿色，透明度为 0.1 */
+            rgba(0, 0, 255, 0.1),
+            /* 蓝色，透明度为 0.1 */
+            rgba(75, 0, 130, 0.1),
+            /* 靛蓝色，透明度为 0.1 */
+            rgba(238, 130, 238, 0.1)
+            /* 紫色，透明度为 0.1 */
+        );
+}
+
+.top-left {
+    align-self: flex-start;
+    transform: translateX(-270px);
+}
+
+.top-right {
+    align-self: flex-end;
+    transform: translateX(300px);
+}
+
+.border-line {
+    /*線の位置*/
+    position: relative;
+    left: 0.2em;
+    top: 0;
+    width: 2px;
+    /*線の太さ*/
+    height: 0;
+    /*はじめは高さを0に*/
+    background: #ccc;
+}
+
+/* 圆点 */
+.line {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    top: -160px;
+}
+
+.biaozhi {
+    display: flex;
+
+
+}
+
+.biaozhi img {
+    width: 130px;
+    top: -140px;
+    position: relative;
+    flex-flow: column;
+    margin-left: 650px;
+}
+
+.biaozh img {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    flex-flow: column;
+    padding: 0 0 20px 0;
+}
+
+.biaozh {
+    display: flex;
+
+}
+
+.top-left:hover,
+.top-right:hover {
+    color: #666666;
+    background: linear-gradient(to right,
+            rgba(255, 0, ))
+}
+
+.rainbow {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.rainbow h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: #666666;
+
+}
+
+
+.rain,
+.rai {
+    display: flex;
+    overflow: hidden;
+    padding-left: 80px;
+    gap: 40px;
+}
+
+.rain .bow img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+.rai .rai-bow img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+
+.rain {
+    width: 80%;
+    margin: 80px auto;
+
+}
+
+.rain .con,
+.rai .cons {
+    margin-top: 40px;
+}
+
+.rai {
+    width: 80%;
+    margin: 80px 20px;
+
+
+}
+
+
+
+.con h2,
+.cons h2 {
+    font-size: 30px;
+
+}
+
+.con p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 0 80px;
+}
+
+.rai p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 0 80px;
+}
+
+.hip {
+    width: 90%;
+    margin: 120px auto;
+}
+
+
+.hip h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: #666666;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Gap between items */
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+
+
+}
+
+.rows ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.row ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Gap between list items */
+}
+
+.row ul li {
+    width: 100%;
+    list-style-type: none;
+    padding: 20px;
+    background-color: white;
+    margin: 5px;
+    border: none;
+    /* 去掉边框 */
+    padding: 0;
+    /* 去掉内边距 */
+    margin: 10px;
+    /* 设置外边距 */
+    width: calc(30% - 20px);
+    border-radius: 30px;
+}
+
+.row ul li {
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+
+.rows ul li {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    margin: 5px;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    width: calc(30% - 20px);
+    border-radius: 30px;
+}
+
+.rows ul li {
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+
+.box img {
+    width: 10px;
+    height: 10px;
+}
+
+.boxs img {
+    width: 10px;
+    height: 10px;
+}
+
+.box {
+    width: 100%;
+    /* 确保方框宽度为 100% */
+    height: 100%;
+    box-sizing: border-box;
+    /* 包括内边距和边框在内的总宽度 */
+    overflow: hidden;
+    /* 隐藏溢出的内容 */
+    background-color: rgb(255, 255, 255);
+    /* 背景颜色 */
+    box-shadow: 0 1px 80px rgba(0, 0, 0, 0.3);
+    /* 阴影效果 */
+    text-align: center;
+    border-radius: 30px;
+    width: calc(100% - 20px);
+    /* 使文本居中 */
+}
+
+.boxs {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 80px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    text-align: center;
+    width: calc(100% - 20px);
+}
+
+.row ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -20px;
+    /* To make the image corners rounded */
+}
+
+.rows ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: -20px;
+
+}
+
+.row ul li p {
+    font-size: 14px;
+    width: 80%;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    overflow-wrap: break-word;
+    /* 允许单词在必要时换行 */
+    word-break: break-word;
+    /* 适用于所有文字类型，允许在单词边界处换行 */
+    hyphens: auto;
+
+}
+
+.rows ul li p {
+    font-size: 14px;
+    width: 80%;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    /* 允许单词在必要时换行 */
+    word-break: break-word;
+    /* 适用于所有文字类型，允许在单词边界处换行 */
+    hyphens: auto;
+}
+
+.row li img,
+.rows li img {
+    width: 200px;
+    height: 150px;
+}
+
+
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    margin: 40px auto;
+}
+
+.slider img {
+    width: 25vw;
+    /*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height: 25vw;
+}
+
+.slider .slick-slide {
+    transform: scale(0.8);
+    /*左右の画像のサイズを80%に*/
+    transition: all .5s;
+    /*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;
+    /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    /*中央の画像のサイズだけ等倍に*/
+    opacity: 1;
+    /*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;
+    /*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;
+    /*マウスカーソルを指マークに*/
+    outline: none;
+    /*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;
+    /*矢印の色*/
+    border-right: 2px solid #666;
+    /*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    /*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    /*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    /*ドットボタンのサイズ*/
+    height: 8px;
+    /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+    /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+    background: #333;
+    /*ドットボタンの現在地表示の色*/
+}
+
+.slider li {
+    list-style-type: none;
+}
+
+.phto .slider {
+    margin-bottom: 100px;
+}
+
+.phto h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: #666666;
+}
+
+.phto .slider img {
+    width: 350px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.kojin {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.kojin .kointro ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.kointro ul li .max img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 90px;
+
+}
+
+.max p {
+    margin: 30px auto;
+    padding-left: 70px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+
+
+
+.slide {}
+
+.slide img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slide li p {
+    margin: 20px 120px;
+    font-size: 16px;
+}
+
+.slide .slick-slide {
+    margin: 0 5px;
+    /*スライド左右の余白調整*/
+}
+
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 0.1),
+            /* 红色，透明度为 0.1 */
+            rgba(255, 165, 0, 0.1),
+            /* 橙色，透明度为 0.1 */
+            rgba(255, 255, 0, 0.1),
+            /* 黄色，透明度为 0.1 */
+            rgba(0, 255, 0, 0.1),
+            /* 绿色，透明度为 0.1 */
+            rgba(0, 0, 255, 0.1),
+            /* 蓝色，透明度为 0.1 */
+            rgba(75, 0, 130, 0.1),
+            /* 靛蓝色，透明度为 0.1 */
+            rgba(238, 130, 238, 0.1)
+            /* 紫色，透明度为 0.1 */
+        );
+}
+
+.footer span {
+    margin-top: 150px;
+    margin-left: 600px;
+
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+.fade.active {
+    opacity: 1;
+    transform: translateY(Opx);
+}
+
+#particles-js {
+    position: fixed;
+    /*描画固定*/
+    z-index: -1;
+    /*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /*背景色*/
+}
+
+#wrapper {
+    position: relative;
+    /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+    z-index: 1;
+    /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 0.5),
+            /* 红色，透明度为 0.1 */
+            rgba(255, 165, 0, 0.5),
+            /* 橙色，透明度为 0.1 */
+            rgba(255, 255, 0, 0.5),
+            /* 黄色，透明度为 0.1 */
+            rgba(0, 255, 0, 0.5),
+            /* 绿色，透明度为 0.1 */
+            rgba(0, 0, 255, 0.5),
+            /* 蓝色，透明度为 0.1 */
+            rgba(75, 0, 130, 0.5),
+            /* 靛蓝色，透明度为 0.1 */
+            rgba(238, 130, 238, 0.5)
+            /* 紫色，透明度为 0.1 */
+        );
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*＝＝＝＝＝タブレット以下の見え方 ＝＝＝＝＝*/
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+.fade.active {
+    opacity: 1;
+    transform: translateY(Opx);
+}
